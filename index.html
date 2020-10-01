@@ -7,33 +7,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="scripts/scripts.js">
+    <script defer src="scripts/script.js"></script>
     <title>Simulador</title>
 </head>
 
 <body>
     <h1>Simulador</h1>
     <section>
-        <form>
-            <div class="form-group">
-                <label for="formGroupExampleInput">Digite uma sequência de números que serão os números de processos,
-                    entrando na mémoria:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput">
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Digite uma sequência de números que serão os números de processos,
+                entrando na mémoria:</label>
+            <input type="text" class="form-control inputProcessos" id="formGroupExampleInput">
+        </div>
+        <button type="submit" id="botaoEnviarProcessos" class="btn btn-primary">Enviar</button>
     </section>
     <section>
         <label for="formGroupExampleInput">Linha do tempo:</label>
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-            <button type="button" class="btn btn-secondary">1</button>
-            <button type="button" class="btn btn-secondary">2</button>
-            <button type="button" class="btn btn-secondary">3</button>
-            <button type="button" class="btn btn-secondary">4</button>
-            <button type="button" class="btn btn-secondary">5</button>
-            <button type="button" class="btn btn-secondary">6</button>
-            <button type="button" class="btn btn-secondary">7</button>
-            <button type="button" class="btn btn-secondary">8</button>
+        <div class="btn-toolbar divLinhaTempo" role="toolbar" aria-label="Toolbar with button groups">
         </div>
     </section>
     <section>
@@ -42,7 +32,7 @@
             <button type="button" class="btn btn-danger maior">?</button>
             <button type="button" class="btn btn-danger maior">?</button>
             <button type="button" class="btn btn-danger maior">?</button>
-            <button type="button" class="btn btn-primary maior">></button>
+            <button type="button" id="botaoLinhaDeTempo" class="btn btn-primary maior">></button>
         </div>
     </section>
 </body>

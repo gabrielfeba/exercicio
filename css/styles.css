@@ -23,3 +23,7 @@ section {
     padding: 20px 10px;
     border-radius: 5px;
 }
+
+.divLinhaTempo>button:first-child {
+    background-color: orange;
+}
